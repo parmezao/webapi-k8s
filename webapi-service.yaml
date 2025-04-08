@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: webapi-service
+spec:
+  selector:
+    app: webapi # Seleciona os Pods com o rótulo 'app: webapi'
+  ports:
+  - protocol: TCP
+    port: 80 # A porta na qual o Service será acessível
+    targetPort: 8080 # A porta do contêiner da WebAPI
+  type: LoadBalancer

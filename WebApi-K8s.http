@@ -1,0 +1,6 @@
+@WebApi_K8s_HostAddress = http://localhost:5135
+
+GET {{WebApi_K8s_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
